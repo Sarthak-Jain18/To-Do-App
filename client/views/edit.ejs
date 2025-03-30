@@ -22,11 +22,11 @@
                 </form>
             </div>
 
-            <div class="head">Edit Task</div>
+            <div class="head"><p>Edit Task</p></div>
         </div>
-
-        <div class="box">
-            <form method="post" action="https://to-do-app-ot3b.onrender.com/tasks/<%= Task._id %>?_method=put">
+        
+        <form method="post" action="https://to-do-app-ot3b.onrender.com/tasks/<%= Task._id %>?_method=put">
+            <div class="box">
                 <input class="d" placeholder="Enter task title" value="<%= Task.title %>" name="title" required><br><br>
                 <input class="d" placeholder="Enter start timing" value="<%= Task.startTime %>" name="startTime" required/><br><br>
                 <input class="d" placeholder="Enter end timing" value="<%= Task.endTime %>" name="endTime" required/><br><br>
@@ -37,8 +37,8 @@
                     <option value="In Progress" <%= Task.status === "In Progress" ? "selected" : "" %>>In Progress</option>
                 </select><br><br>
                 <button class="submit d">Edit Task</button>
-            </form>
-        </div>
+            </div>
+        </form>
     </div>
 </body>
 </html>
