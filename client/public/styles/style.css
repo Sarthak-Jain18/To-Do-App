@@ -30,25 +30,20 @@ body{
     align-items: center;
 }
 
-/* Scrollbar track (background) */
+/* Scrollbar */
 ::-webkit-scrollbar {
-    width: 1rem; /* Set scrollbar width */
+    width: 1rem;
 }
-
-/* Scrollbar background */
 ::-webkit-scrollbar-track {
-    background: #0f172a; /* Change this to your desired color */
+    background: #0f172a;
 }
-
-/* Scrollbar handle (the moving part) */
 ::-webkit-scrollbar-thumb {
-    background: #364156; /* Change this to your desired color */
+    background: #364156;
     border-radius: 0.5rem;
 }
-
-/* Optional: Scrollbar handle on hover */
 ::-webkit-scrollbar-thumb:hover {
     background: #485671;
 }
+
 
 

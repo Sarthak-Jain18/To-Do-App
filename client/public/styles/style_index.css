@@ -88,8 +88,6 @@
     border-radius: 1rem;
     background-color: #1e293b;
     margin-left: auto;
-    /* width: 9rem; */
-    /* width: auto; */
     flex-grow: 0;
     max-width: 20%;
 }
@@ -192,3 +190,5 @@
     color: gray;
     margin-top: 2rem;
 }
+
+
