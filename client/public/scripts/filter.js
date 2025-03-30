@@ -1,7 +1,7 @@
 filterSelect.addEventListener('change', function () {
     input.value = '';
     const query = this.value.trim();
-    fetch(`https://to-do-app-dga6.onrender.com/filter?q=${encodeURIComponent(query)}`)
+    fetch(`https://to-do-app-ot3b.onrender.com/filter?q=${encodeURIComponent(query)}`)
         .then(response => response.json())
         .then(tasks => {
             taskContainer.innerHTML = ''; 
@@ -18,17 +18,17 @@ filterSelect.addEventListener('change', function () {
                         </div>
                         <div class="options">
                             <div class="sub_options sub1">
-                                <form method="get" action="https://to-do-app-dga6.onrender.com/tasks/${task._id}">
+                                <form method="get" action="https://to-do-app-ot3b.onrender.com/tasks/${task._id}">
                                     <button><img src="/assets/view_icon.png" alt=""></button>
                                 </form>
                             </div>
                             <div class="sub_options sub2">
-                                <form method="get" action="https://to-do-app-dga6.onrender.com/tasks/edit/${task._id}">
+                                <form method="get" action="https://to-do-app-ot3b.onrender.com/tasks/edit/${task._id}">
                                     <button><img src="/assets/edit_icon.png" alt=""></button>
                                 </form>
                             </div>
                             <div class="sub_options sub3">
-                                <form id="delete_from" method="post" action="https://to-do-app-dga6.onrender.com/tasks/${task._id}?_method=DELETE">
+                                <form id="delete_from" method="post" action="https://to-do-app-ot3b.onrender.com/tasks/${task._id}?_method=DELETE">
                                     <button type="button" id="delete_btn"><img src="/assets/delete_icon.png" alt=""></button>
                                 </form>
                             </div>
