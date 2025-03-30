@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/styles/style.css">
+    <link rel="stylesheet" href="/styles/style_form.css">
+    <title>To Do List</title>
+</head>
+<body>
+    <div class="container">
+        <div class="navbar">
+            <!-- back button -->
+            <div class="d1">
+                <form method="get" action="/tasks">
+                    <button>
+                        <img src="/assets/back_icon.png" alt="">
+                    </button>
+                </form>
+            </div>
+
+            <div class="head">Edit Task</div>
+        </div>
+
+        <div class="box">
+            <form method="post" action="/tasks/<%= Task._id %>?_method=put">
+                <input class="d" placeholder="Enter task title" value="<%= Task.title %>" name="title" required><br><br>
+                <input class="d" placeholder="Enter start timing" value="<%= Task.startTime %>" name="startTime" required/><br><br>
+                <input class="d" placeholder="Enter end timing" value="<%= Task.endTime %>" name="endTime" required/><br><br>
+                <textarea class="d" placeholder="Enter description" name="description" required><%= Task.description %></textarea><br><br>
+                <select class="d" name="status" required>
+                    <option value="Pending" <%= Task.status === "Pending" ? "selected" : "" %>>Pending</option>
+                    <option value="Completed" <%= Task.status === "Completed" ? "selected" : "" %>>Completed</option>
+                    <option value="In Progress" <%= Task.status === "In Progress" ? "selected" : "" %>>In Progress</option>
+                </select><br><br>
+                <button class="submit d">Edit Task</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

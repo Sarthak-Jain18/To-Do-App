@@ -1,0 +1,64 @@
+/* Delete Custom Alert */
+#alertContainer{
+    z-index: 5;
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.8);
+    justify-content: center;
+    align-items: center;
+}
+#customAlert{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 15rem;
+    width: 30rem;
+    background-color: #364156;
+    border: 0.01rem solid white;
+    border-radius: 2rem;
+    padding: 1rem;
+    margin: 1rem;
+}
+#customAlert img{
+    height: 5rem;
+    width: 5rem;
+    margin-bottom: 0.5rem;
+}
+.confirm{
+    font-size: 1.25rem;
+    color: white;
+}
+#btns{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#btns button{
+    margin: 1.5rem;
+    border: none;
+    height: 2.5rem;
+    width: 4.5rem;
+    font-size: 1rem;
+    border-radius: 0.5rem;
+    cursor: pointer;
+}
+#btns #confirmBtnYes{
+    background-color: rgb(208,84,81);
+}
+#btns #confirmBtnYes:hover{
+    background-color: rgb(187,76,73);
+}
+#btns #confirmBtnNo{
+    background-color: rgb(170,170,170);
+}
+#btns #confirmBtnNo:hover{
+    background-color: rgb(153,153,153);
+}
+
+
+

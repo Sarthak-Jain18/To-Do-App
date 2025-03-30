@@ -1,0 +1,194 @@
+.container{
+    width: 48rem;
+    padding: 1.25rem;
+} 
+
+/* HEADING */
+.head{
+    display: flex;
+}
+.heading{
+    color: white;
+    font-weight: 700;
+}
+.add{
+    margin-top: 1.25rem;
+    margin-left: auto;
+}
+.btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #4e46e5;
+    border-radius: 50%;
+    height: 2.5rem;
+    width: 2.5rem;
+}
+.btn button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    border: none;
+    background: transparent;
+    cursor: pointer;
+    border-radius: 50%;
+}
+.btn img {
+    height: 2rem;
+    width: 2rem;
+    opacity: 1;
+}
+.btn:hover {
+    box-shadow: 0px 0.4rem 1rem rgba(255, 255, 255, 0.136);
+}
+
+/* Searchbar */
+.searchbar{
+    margin-top: 1rem;
+    display: flex;
+    /* height: 2.5rem; */
+    width: 100%;
+    gap: 1rem;
+}
+.searchbar img{
+    height: 1.5rem;
+    width: 1.5rem;
+    opacity: 0.5;
+    margin: 0.5rem;
+}
+.search{
+    display: flex;
+    border: 0.01rem solid #e5e7eb;
+    color: white;
+    border-radius: 1rem;
+    background-color: #1e293b;
+    /* width: 38rem; */
+    /* width: auto; */
+    flex-grow: 1;
+    max-width: 80%;
+}
+.search input{
+    margin: 0.5rem;
+    height: 1.5rem;
+    color: white;
+    background-color: transparent;
+    border: none;
+    /* width: 30rem; */
+    width: 100%;
+}
+.search input:focus{
+    outline: none;
+}
+.filter{
+    display: flex;
+    border: 0.01rem solid #e5e7eb;
+    color: white;
+    border-radius: 1rem;
+    background-color: #1e293b;
+    margin-left: auto;
+    /* width: 9rem; */
+    /* width: auto; */
+    flex-grow: 0;
+    max-width: 20%;
+}
+.filter select{
+    margin: 0.5rem;
+    height: 1.5rem;
+    color: gray;
+    background-color: #1e293b;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+}
+.filter select:focus{
+    outline: none;
+}
+
+/* BOX */
+.box{
+    border: 0.01rem solid #e5e7eb;
+    color: white;
+    border-radius: 1rem;
+    background-color: #1e293b;
+    margin: 1rem 0;
+}
+
+/* title */
+.c1{
+    font-weight: 500;
+    font-size: 1.5rem;
+    padding-top: 0.5rem;
+    margin: 1rem;
+}
+/* time, status */
+.c2{
+    font-weight: 400;
+    display: flex;
+    text-align: center;
+}
+.badge {
+    display: inline-block;
+    border-radius: 0.8rem;
+    margin-left: 1rem;
+    padding: 0.25rem 0.5rem;
+    background-color: #334155;
+    color: white;
+}
+
+/* options */
+.options{
+    background-color: transparent;
+    margin: 1rem;
+    display: flex;
+}
+.options img{
+    padding-top: 0.2rem;
+    height: 1.5rem;
+    width: 1.5rem;
+    cursor: pointer;
+    opacity: 0.6;
+}
+.options button{
+    background-color: transparent;
+    border: none;
+    margin-bottom: 0.25rem;
+}
+.sub_options{
+    margin-right: 1rem;
+}
+.sub_options form{
+    height: 2.3rem;
+    width: 2.3rem;
+}
+.sub_options button:hover{
+    border-radius: 0.25rem;
+    background-color: #334155;
+}
+.sub_options img:hover{
+    opacity: 1;
+}
+.nav{
+    margin-right: 1rem;
+}
+
+.completed {
+    background-color: rgba(34, 197, 94, 0.2);
+    color: #22c55e;
+}
+.in_progress {
+    background-color: rgba(59, 130, 246, 0.2);
+    color: #3b82f6;
+}
+.pending {
+    background-color: rgba(245, 158, 11, 0.2);
+    color: #f59e0b;
+}
+
+.notask{
+    text-align: center;
+    font-size: 1rem;
+    color: gray;
+    margin-top: 2rem;
+}
