@@ -1,89 +1,89 @@
 .container{
-    border: 0.01rem solid #e5e7eb;
     background-color: #1e293b;
     width: 48rem;
-    padding: 1.25rem;
-    border-radius: 1rem;
-    margin-top: 5rem;
+    margin: 0.5rem;
+    margin-top: 4rem;
+    border-radius: 2rem;
+    border: 0.01rem solid white;
 }
 
-/* navbar */
 .navbar{
-    display: flex;
+    display: flex;  
+    justify-content: center;
+    align-items: center;
 }
-.navbar img{
+.d1{
+    margin: 0.5rem;
+    margin-right: auto;
+}
+.d1 img{
     height: 2rem;
     width: 2rem;
+    background-color: transparent;
     opacity: 0.6;
 }
-.navbar img:hover{
+.d1 img:hover{
     opacity: 1;
 }
-.navbar button{
-    background-color: transparent;
+.d1 button{
     border: none;
+    background-color: transparent;
 }
-
 .head{
-    color: white;
-    text-align: center;
-    font-size: 2rem;
-    font-weight: 500;
-    margin-bottom: 1rem;
-    margin-left: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 0.5rem;
     margin-right: auto;
+}
+p{
+    color: white;
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+.blank{
+    height: 2rem;
+    width: 4rem;
+    background-color: transparent;
 }
 
 .box{
     color: gray;
+    background-color: #1e293b;
+    margin: 1rem;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    flex-direction: column;
-    width: 90%;
 }
 
 .d{
-    border: none;
-    width: 100%;
     font-size: 1rem;
-    border-radius: 1rem;
+    color: white;
+    background-color: #0f172a;;
+    width: 90%;
+    border: none;
+    padding-left: 1rem;
+    border-radius: 2rem;
 }
 
 input{
-    color: white;
-    background-color: #0f172a;
-    padding: 0.5rem;
-    height: 2rem;
+    height: 2.5rem;
 }
 textarea{
-    color: white;
-    background-color: #0f172a;
     padding: 0.5rem;
-    height: 10rem;
+    height: 6rem;
     resize: none;
     overflow: auto;
     font-family: "Ubuntu", sans-serif;
 }
 select{
-    color: gray;
-    background-color: #0f172a;
-    margin-left: 0.5rem;
-    height: 3rem;
-    font-family: "Ubuntu", sans-serif;
+    height: 2.5rem;
 }
-
 .submit{
-    color: white;
-    font-weight: 400;
-    margin-left: 0.5rem;
-    height: 2rem;
-    text-align: center;
-    background-color: #4e46e5;
-    border: none;
+    height: 2.5rem;
+    background-color: #4e46e5;;
 }
 .submit:hover{
     box-shadow: 0px 0.4rem 1rem rgba(255, 255, 255, 0.136);
 }
-
-
