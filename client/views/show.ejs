@@ -18,7 +18,7 @@
 
             <!-- back button -->
             <div class="d1">
-                <form method="get" action="/tasks">
+                <form method="get" action="https://to-do-app-dga6.onrender.com/tasks">
                     <button>
                         <img src="/assets/back_icon.png" alt="">
                     </button>
@@ -28,7 +28,7 @@
             <div class="d2">
                 <!-- edit task -->
                 <div class="edit">
-                    <form method="get" action="/tasks/edit/<%= Task._id %>">
+                    <form method="get" action="https://to-do-app-dga6.onrender.com/tasks/edit/<%= Task._id %>">
                         <div class="nav">
                             <button>
                                 <img src="/assets/edit_icon.png" alt="">
@@ -39,7 +39,7 @@
 
                 <!-- delete task -->
                 <div class="delete">
-                    <form id="delete_from" method="post" action="/tasks/<%= Task._id %>?_method=DELETE">             
+                    <form id="delete_from" method="post" action="https://to-do-app-dga6.onrender.com/tasks/<%= Task._id %>?_method=DELETE">             
                         <button type="button" id="delete_btn"><img src="/assets/delete_icon.png" alt=""></button>
                     </form>
                 </div>
