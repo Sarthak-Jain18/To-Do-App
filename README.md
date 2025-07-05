@@ -1,6 +1,6 @@
 # 📝 To-Do App
 
-A simple and efficient To-Do List web application to manage daily tasks. Built with **Node.js, Express, MongoDB, and EJS**, and deployed using **Render (Backend) & Vercel (Frontend)**.
+A simple and efficient To-Do List web application to manage daily tasks. Built with **Node.js, Express, MongoDB, and EJS**, and deployed using **Render**.
 
 ## 🚀 Live Demo : [https://to-do-app-ot3b.onrender.com/tasks](https://to-do-app-ot3b.onrender.com/tasks)
 
@@ -45,7 +45,7 @@ A simple and efficient To-Do List web application to manage daily tasks. Built w
 - **Frontend**: HTML, CSS, JavaScript, EJS
 - **Backend**: Node.js, Express.js
 - **Database**: MongoDB (Atlas)
-- **Hosting**: Render & Vercel
+- **Hosting**: Render
 
 ## 📚 Learning Outcomes
 
